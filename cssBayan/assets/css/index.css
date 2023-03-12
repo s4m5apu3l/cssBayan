@@ -1,1 +1,67 @@
 /* test */
+@font-face {
+  font-family: "Fredoka-f";
+  src: url("../fonts/FredokaOne-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka-f", sans-serif;
+}
+
+.l-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.l-accordion {
+}
+.l-accordion__title {
+}
+.l-accordion__content {
+  overflow: hidden;
+  width: 100%;
+}
+.l-accordion__list {
+}
+.l-accordion__list-item {
+}
+.l-accordion-item {
+  overflow: hidden;
+}
+.l-accordion-item__content {
+}
+
+.accordion {
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  background-color: #eee;
+  padding: 10px;
+}
+
+
+.l-accordion-item__content{
+  max-height: 0;
+  padding: 0 16px;
+  color: rgba(4,57,94,1);
+  background: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input:checked ~ .l-accordion-item__content {
+  max-height: 10vh;
+  padding: 16px;
+}
