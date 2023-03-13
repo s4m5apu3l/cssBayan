@@ -19,16 +19,29 @@ body {
 }
 
 .l-accordion {
+  padding: 40px 0;
+  max-width: 66.6vw;
+  margin: 0 auto;
 }
 .l-accordion__title {
+  font-size: 50px;
 }
 .l-accordion__content {
   overflow: hidden;
   width: 100%;
+  padding: 40px 0;
 }
-.l-accordion__list {
-}
+
 .l-accordion__list-item {
+}
+
+.l-accordion__list-item label {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  color: rgb(46, 46, 46);
 }
 .l-accordion-item {
   overflow: hidden;
